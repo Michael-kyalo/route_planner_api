@@ -1,6 +1,7 @@
 # route_planner_api_client
 
-A new Flutter project.
+Client application for route_planner_api
+
 
 ## Getting Started
 
