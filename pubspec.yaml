@@ -15,4 +15,5 @@ dev_dependencies:
   test: ^1.16.0
 dependencies: 
   grpc: ^3.0.2
+  postgres: ^2.4.3
   protobuf: ^2.0.1
