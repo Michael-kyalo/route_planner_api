@@ -2,35 +2,36 @@ syntax = "proto3";
 
 
 message Activity {
-    int32 tripId = 1;
-    int32 id = 2;
+    string tripId = 1;
+    string id = 2;
     int32 status = 3;
     string title = 4;
     repeated Cost costs = 5;
 }
 
 message Cost {
-    int32 activityId = 1;
-    int32 id = 2;
+    string activityId = 1;
+    string id = 2;
     int32 total = 3;
     string title = 4;
     string description = 5;
 
 }
 message TripTag {
-    int32 tripId = 1;
-    int32 id = 2;
+    string tripId = 1;
+    string id = 2;
     string title = 3;
+    
 }
 message TripPhoto {
-    int32 tripId = 1;
-    int32 id = 2;
+    string tripId = 1;
+    string id = 2;
     string url = 3;
     string caption = 4;
 }
 
 message Trip {
-    int32 id = 1;
+    string id = 1;
     string title = 2;
     string description = 3;
     int32 status = 4;
@@ -50,7 +51,7 @@ service TripService {
 
 message Empty{}
 message TripRequest {
-    int32 id = 1;
+    string id = 1;
 }
 
 message TripResponse {

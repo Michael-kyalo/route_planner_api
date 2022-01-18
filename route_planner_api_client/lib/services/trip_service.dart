@@ -10,8 +10,9 @@ class TripService {
             const ChannelOptions(credentials: ChannelCredentials.insecure())));
   }
 
-  Future<TripResponse> getTripById(int id) async {
+  Future<TripResponse> getTripById(String id) async {
     return client.getTripById(TripRequest()..id = id);
+
   }
 
   Future<TripsResponse> getAllTrips() async {

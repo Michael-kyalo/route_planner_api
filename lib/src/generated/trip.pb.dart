@@ -11,8 +11,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 class Activity extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'Activity', createEmptyInstance: create)
-    ..a<$core.int>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'tripId', $pb.PbFieldType.O3, protoName: 'tripId')
-    ..a<$core.int>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id', $pb.PbFieldType.O3)
+    ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'tripId', protoName: 'tripId')
+    ..aOS(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id')
     ..a<$core.int>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'status', $pb.PbFieldType.O3)
     ..aOS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'title')
     ..pc<Cost>(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'costs', $pb.PbFieldType.PM, subBuilder: Cost.create)
@@ -21,8 +21,8 @@ class Activity extends $pb.GeneratedMessage {
 
   Activity._() : super();
   factory Activity({
-    $core.int? tripId,
-    $core.int? id,
+    $core.String? tripId,
+    $core.String? id,
     $core.int? status,
     $core.String? title,
     $core.Iterable<Cost>? costs,
@@ -67,18 +67,18 @@ class Activity extends $pb.GeneratedMessage {
   static Activity? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.int get tripId => $_getIZ(0);
+  $core.String get tripId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set tripId($core.int v) { $_setSignedInt32(0, v); }
+  set tripId($core.String v) { $_setString(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasTripId() => $_has(0);
   @$pb.TagNumber(1)
   void clearTripId() => clearField(1);
 
   @$pb.TagNumber(2)
-  $core.int get id => $_getIZ(1);
+  $core.String get id => $_getSZ(1);
   @$pb.TagNumber(2)
-  set id($core.int v) { $_setSignedInt32(1, v); }
+  set id($core.String v) { $_setString(1, v); }
   @$pb.TagNumber(2)
   $core.bool hasId() => $_has(1);
   @$pb.TagNumber(2)
@@ -108,8 +108,8 @@ class Activity extends $pb.GeneratedMessage {
 
 class Cost extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'Cost', createEmptyInstance: create)
-    ..a<$core.int>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'activityId', $pb.PbFieldType.O3, protoName: 'activityId')
-    ..a<$core.int>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id', $pb.PbFieldType.O3)
+    ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'activityId', protoName: 'activityId')
+    ..aOS(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id')
     ..a<$core.int>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'total', $pb.PbFieldType.O3)
     ..aOS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'title')
     ..aOS(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'description')
@@ -118,8 +118,8 @@ class Cost extends $pb.GeneratedMessage {
 
   Cost._() : super();
   factory Cost({
-    $core.int? activityId,
-    $core.int? id,
+    $core.String? activityId,
+    $core.String? id,
     $core.int? total,
     $core.String? title,
     $core.String? description,
@@ -164,18 +164,18 @@ class Cost extends $pb.GeneratedMessage {
   static Cost? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.int get activityId => $_getIZ(0);
+  $core.String get activityId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set activityId($core.int v) { $_setSignedInt32(0, v); }
+  set activityId($core.String v) { $_setString(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasActivityId() => $_has(0);
   @$pb.TagNumber(1)
   void clearActivityId() => clearField(1);
 
   @$pb.TagNumber(2)
-  $core.int get id => $_getIZ(1);
+  $core.String get id => $_getSZ(1);
   @$pb.TagNumber(2)
-  set id($core.int v) { $_setSignedInt32(1, v); }
+  set id($core.String v) { $_setString(1, v); }
   @$pb.TagNumber(2)
   $core.bool hasId() => $_has(1);
   @$pb.TagNumber(2)
@@ -211,16 +211,16 @@ class Cost extends $pb.GeneratedMessage {
 
 class TripTag extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'TripTag', createEmptyInstance: create)
-    ..a<$core.int>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'tripId', $pb.PbFieldType.O3, protoName: 'tripId')
-    ..a<$core.int>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id', $pb.PbFieldType.O3)
+    ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'tripId', protoName: 'tripId')
+    ..aOS(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id')
     ..aOS(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'title')
     ..hasRequiredFields = false
   ;
 
   TripTag._() : super();
   factory TripTag({
-    $core.int? tripId,
-    $core.int? id,
+    $core.String? tripId,
+    $core.String? id,
     $core.String? title,
   }) {
     final _result = create();
@@ -257,18 +257,18 @@ class TripTag extends $pb.GeneratedMessage {
   static TripTag? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.int get tripId => $_getIZ(0);
+  $core.String get tripId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set tripId($core.int v) { $_setSignedInt32(0, v); }
+  set tripId($core.String v) { $_setString(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasTripId() => $_has(0);
   @$pb.TagNumber(1)
   void clearTripId() => clearField(1);
 
   @$pb.TagNumber(2)
-  $core.int get id => $_getIZ(1);
+  $core.String get id => $_getSZ(1);
   @$pb.TagNumber(2)
-  set id($core.int v) { $_setSignedInt32(1, v); }
+  set id($core.String v) { $_setString(1, v); }
   @$pb.TagNumber(2)
   $core.bool hasId() => $_has(1);
   @$pb.TagNumber(2)
@@ -286,8 +286,8 @@ class TripTag extends $pb.GeneratedMessage {
 
 class TripPhoto extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'TripPhoto', createEmptyInstance: create)
-    ..a<$core.int>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'tripId', $pb.PbFieldType.O3, protoName: 'tripId')
-    ..a<$core.int>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id', $pb.PbFieldType.O3)
+    ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'tripId', protoName: 'tripId')
+    ..aOS(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id')
     ..aOS(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'url')
     ..aOS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'caption')
     ..hasRequiredFields = false
@@ -295,8 +295,8 @@ class TripPhoto extends $pb.GeneratedMessage {
 
   TripPhoto._() : super();
   factory TripPhoto({
-    $core.int? tripId,
-    $core.int? id,
+    $core.String? tripId,
+    $core.String? id,
     $core.String? url,
     $core.String? caption,
   }) {
@@ -337,18 +337,18 @@ class TripPhoto extends $pb.GeneratedMessage {
   static TripPhoto? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.int get tripId => $_getIZ(0);
+  $core.String get tripId => $_getSZ(0);
   @$pb.TagNumber(1)
-  set tripId($core.int v) { $_setSignedInt32(0, v); }
+  set tripId($core.String v) { $_setString(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasTripId() => $_has(0);
   @$pb.TagNumber(1)
   void clearTripId() => clearField(1);
 
   @$pb.TagNumber(2)
-  $core.int get id => $_getIZ(1);
+  $core.String get id => $_getSZ(1);
   @$pb.TagNumber(2)
-  set id($core.int v) { $_setSignedInt32(1, v); }
+  set id($core.String v) { $_setString(1, v); }
   @$pb.TagNumber(2)
   $core.bool hasId() => $_has(1);
   @$pb.TagNumber(2)
@@ -375,7 +375,7 @@ class TripPhoto extends $pb.GeneratedMessage {
 
 class Trip extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'Trip', createEmptyInstance: create)
-    ..a<$core.int>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id', $pb.PbFieldType.O3)
+    ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id')
     ..aOS(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'title')
     ..aOS(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'description')
     ..a<$core.int>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'status', $pb.PbFieldType.O3)
@@ -388,7 +388,7 @@ class Trip extends $pb.GeneratedMessage {
 
   Trip._() : super();
   factory Trip({
-    $core.int? id,
+    $core.String? id,
     $core.String? title,
     $core.String? description,
     $core.int? status,
@@ -446,9 +446,9 @@ class Trip extends $pb.GeneratedMessage {
   static Trip? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.int get id => $_getIZ(0);
+  $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.int v) { $_setSignedInt32(0, v); }
+  set id($core.String v) { $_setString(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
@@ -531,13 +531,13 @@ class Empty extends $pb.GeneratedMessage {
 
 class TripRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'TripRequest', createEmptyInstance: create)
-    ..a<$core.int>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id', $pb.PbFieldType.O3)
+    ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id')
     ..hasRequiredFields = false
   ;
 
   TripRequest._() : super();
   factory TripRequest({
-    $core.int? id,
+    $core.String? id,
   }) {
     final _result = create();
     if (id != null) {
@@ -567,9 +567,9 @@ class TripRequest extends $pb.GeneratedMessage {
   static TripRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.int get id => $_getIZ(0);
+  $core.String get id => $_getSZ(0);
   @$pb.TagNumber(1)
-  set id($core.int v) { $_setSignedInt32(0, v); }
+  set id($core.String v) { $_setString(0, v); }
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
