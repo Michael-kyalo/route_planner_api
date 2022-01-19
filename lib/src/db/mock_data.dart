@@ -4,28 +4,24 @@ final trips = [
     'title': "Mombasa Trip",
     'description': "Our Next Trip to mombasa",
     'status': 0,
-    'budget': 100,
   },
   {
     'id': 2,
     'title': "Lamu Trip",
     'description': "Our Next Trip to mombasa",
     'status': 0,
-    'budget': 100,
   },
   {
     'id': 3,
     'title': "Malindi Trip",
     'description': "Our Next Trip to mombasa",
     'status': 0,
-    'budget': 100,
   },
   {
     'id': 4,
     'title': "Moshi Trip",
     'description': "Our Next Trip to mombasa",
     'status': 0,
-    'budget': 100,
   }
 ];
 

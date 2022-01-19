@@ -75,3 +75,71 @@ abstract class TripServiceBase extends $grpc.Service {
   $async.Future<$0.TripResponse> getTripById(
       $grpc.ServiceCall call, $0.TripRequest request);
 }
+
+class UserServiceClient extends $grpc.Client {
+  static final _$createUserWithEmailAndPassword =
+      $grpc.ClientMethod<$0.UserRequest, $0.UserResponse>(
+          '/UserService/createUserWithEmailAndPassword',
+          ($0.UserRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $0.UserResponse.fromBuffer(value));
+  static final _$signInWithEmailAndPassword =
+      $grpc.ClientMethod<$0.UserRequest, $0.UserResponse>(
+          '/UserService/signInWithEmailAndPassword',
+          ($0.UserRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) => $0.UserResponse.fromBuffer(value));
+
+  UserServiceClient($grpc.ClientChannel channel,
+      {$grpc.CallOptions? options,
+      $core.Iterable<$grpc.ClientInterceptor>? interceptors})
+      : super(channel, options: options, interceptors: interceptors);
+
+  $grpc.ResponseFuture<$0.UserResponse> createUserWithEmailAndPassword(
+      $0.UserRequest request,
+      {$grpc.CallOptions? options}) {
+    return $createUnaryCall(_$createUserWithEmailAndPassword, request,
+        options: options);
+  }
+
+  $grpc.ResponseFuture<$0.UserResponse> signInWithEmailAndPassword(
+      $0.UserRequest request,
+      {$grpc.CallOptions? options}) {
+    return $createUnaryCall(_$signInWithEmailAndPassword, request,
+        options: options);
+  }
+}
+
+abstract class UserServiceBase extends $grpc.Service {
+  $core.String get $name => 'UserService';
+
+  UserServiceBase() {
+    $addMethod($grpc.ServiceMethod<$0.UserRequest, $0.UserResponse>(
+        'createUserWithEmailAndPassword',
+        createUserWithEmailAndPassword_Pre,
+        false,
+        false,
+        ($core.List<$core.int> value) => $0.UserRequest.fromBuffer(value),
+        ($0.UserResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$0.UserRequest, $0.UserResponse>(
+        'signInWithEmailAndPassword',
+        signInWithEmailAndPassword_Pre,
+        false,
+        false,
+        ($core.List<$core.int> value) => $0.UserRequest.fromBuffer(value),
+        ($0.UserResponse value) => value.writeToBuffer()));
+  }
+
+  $async.Future<$0.UserResponse> createUserWithEmailAndPassword_Pre(
+      $grpc.ServiceCall call, $async.Future<$0.UserRequest> request) async {
+    return createUserWithEmailAndPassword(call, await request);
+  }
+
+  $async.Future<$0.UserResponse> signInWithEmailAndPassword_Pre(
+      $grpc.ServiceCall call, $async.Future<$0.UserRequest> request) async {
+    return signInWithEmailAndPassword(call, await request);
+  }
+
+  $async.Future<$0.UserResponse> createUserWithEmailAndPassword(
+      $grpc.ServiceCall call, $0.UserRequest request);
+  $async.Future<$0.UserResponse> signInWithEmailAndPassword(
+      $grpc.ServiceCall call, $0.UserRequest request);
+}

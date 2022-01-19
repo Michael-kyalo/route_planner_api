@@ -21,6 +21,8 @@ class _SignInTabState extends State<SignInTab> {
   @override
   Widget build(BuildContext context) {
     Future _signInTap(BuildContext context) async {
+
+
       if (kDebugMode) {
         print("Getting all Trips");
       }

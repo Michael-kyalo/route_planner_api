@@ -9,6 +9,10 @@ Activity convertToActivity(Map activity) => Activity.fromJson(
     ' {"1":${activity['tripId']}, "2" : ${activity['id']}, "3" : ${activity['status']}, "4" : "${activity['title']}"}');
 
 String stringFromObjectId(id) {
-  print(id.toString());
   return id.toString().replaceAll('ObjectId("', '').replaceAll('")', '');
+}
+
+User convertToUser(Map user) {
+  return User.fromJson(
+      '{"1" : "${stringFromObjectId(user['_id'])}","2": "${user['email']}" , "3" : "${user['username']}", "4" : "${user['passhash']}"}');
 }

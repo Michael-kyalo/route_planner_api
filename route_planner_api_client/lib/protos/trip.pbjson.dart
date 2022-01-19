@@ -115,3 +115,60 @@ const TripsResponse$json = const {
 
 /// Descriptor for `TripsResponse`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List tripsResponseDescriptor = $convert.base64Decode('Cg1Ucmlwc1Jlc3BvbnNlEhsKBXRyaXBzGAEgAygLMgUuVHJpcFIFdHJpcHM=');
+@$core.Deprecated('Use userDescriptor instead')
+const User$json = const {
+  '1': 'User',
+  '2': const [
+    const {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
+    const {'1': 'email', '3': 2, '4': 1, '5': 9, '10': 'email'},
+    const {'1': 'username', '3': 3, '4': 1, '5': 9, '10': 'username'},
+    const {'1': 'passhash', '3': 4, '4': 1, '5': 9, '10': 'passhash'},
+    const {'1': 'status', '3': 5, '4': 1, '5': 11, '6': '.UserStatus', '10': 'status'},
+  ],
+};
+
+/// Descriptor for `User`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List userDescriptor = $convert.base64Decode('CgRVc2VyEg4KAmlkGAEgASgJUgJpZBIUCgVlbWFpbBgCIAEoCVIFZW1haWwSGgoIdXNlcm5hbWUYAyABKAlSCHVzZXJuYW1lEhoKCHBhc3NoYXNoGAQgASgJUghwYXNzaGFzaBIjCgZzdGF0dXMYBSABKAsyCy5Vc2VyU3RhdHVzUgZzdGF0dXM=');
+@$core.Deprecated('Use userStatusDescriptor instead')
+const UserStatus$json = const {
+  '1': 'UserStatus',
+  '2': const [
+    const {'1': 'code', '3': 1, '4': 1, '5': 5, '10': 'code'},
+    const {'1': 'status', '3': 2, '4': 1, '5': 9, '10': 'status'},
+  ],
+};
+
+/// Descriptor for `UserStatus`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List userStatusDescriptor = $convert.base64Decode('CgpVc2VyU3RhdHVzEhIKBGNvZGUYASABKAVSBGNvZGUSFgoGc3RhdHVzGAIgASgJUgZzdGF0dXM=');
+@$core.Deprecated('Use userRequestDescriptor instead')
+const UserRequest$json = const {
+  '1': 'UserRequest',
+  '2': const [
+    const {'1': 'user', '3': 1, '4': 1, '5': 11, '6': '.User', '10': 'user'},
+  ],
+};
+
+/// Descriptor for `UserRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List userRequestDescriptor = $convert.base64Decode('CgtVc2VyUmVxdWVzdBIZCgR1c2VyGAEgASgLMgUuVXNlclIEdXNlcg==');
+@$core.Deprecated('Use userResponseDescriptor instead')
+const UserResponse$json = const {
+  '1': 'UserResponse',
+  '2': const [
+    const {'1': 'header', '3': 1, '4': 1, '5': 11, '6': '.ResponseHeader', '10': 'header'},
+    const {'1': 'user', '3': 2, '4': 1, '5': 11, '6': '.User', '10': 'user'},
+  ],
+};
+
+/// Descriptor for `UserResponse`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List userResponseDescriptor = $convert.base64Decode('CgxVc2VyUmVzcG9uc2USJwoGaGVhZGVyGAEgASgLMg8uUmVzcG9uc2VIZWFkZXJSBmhlYWRlchIZCgR1c2VyGAIgASgLMgUuVXNlclIEdXNlcg==');
+@$core.Deprecated('Use responseHeaderDescriptor instead')
+const ResponseHeader$json = const {
+  '1': 'ResponseHeader',
+  '2': const [
+    const {'1': 'code', '3': 1, '4': 1, '5': 5, '10': 'code'},
+    const {'1': 'message', '3': 2, '4': 1, '5': 9, '10': 'message'},
+  ],
+};
+
+/// Descriptor for `ResponseHeader`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List responseHeaderDescriptor = $convert.base64Decode('Cg5SZXNwb25zZUhlYWRlchISCgRjb2RlGAEgASgFUgRjb2RlEhgKB21lc3NhZ2UYAiABKAlSB21lc3NhZ2U=');

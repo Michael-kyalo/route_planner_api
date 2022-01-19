@@ -12,7 +12,7 @@ class AppTextFormFieldWithNoBorder extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text("Password", style: TextStyle(
+           Text(label_text, style: const TextStyle(
             fontSize: 12,
             fontFamily: "Avenir",
           ),),
